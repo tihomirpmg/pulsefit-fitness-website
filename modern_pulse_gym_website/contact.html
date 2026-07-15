@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pulse Fitness Center</title>
+    <!-- Modern Google Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">PULSE<span>FIT</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link ">Home</a></li>
+                <li><a href="about.html" class="nav-link ">About Us</a></li>
+                <li><a href="pricing.html" class="nav-link ">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link active cta-nav">Join Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <div style="height: 100px;"></div> <!-- Spacer -->
+    <section class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-wrapper">
+            <!-- Contact form -->
+            <div class="contact-form-container">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="membership">Interested Plan</label>
+                        <select id="membership" class="form-control">
+                            <option>Daily Pass - $10</option>
+                            <option selected>Monthly Gym - $45</option>
+                            <option>Student Discount - $30</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="4" class="form-control" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Info details -->
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>15 Innovation Boulevard, Tech District, Kazanlak, Bulgaria</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock contact-icon"></i>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 24 Hours Open</p>
+                        <p>Saturday - Sunday: 06:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <div>
+                        <h3>Phone & Support</h3>
+                        <p>+359 (0) 89 888 1234</p>
+                        <p>support@pulsefit.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container" style="padding: 20px 0 0 0;">
+            <p>&copy; 2026 <span>PULSEFIT</span> Center. All rights reserved.</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Designed for modern fitness portfolios.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
